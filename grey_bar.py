@@ -121,7 +121,6 @@ class ColoredBar(QWidget):
         self.update_matlab_line_edit()
 
     def get_matlab_colors(self):
-        # return [(cell.pos().x() / self.width(), self.gradient_bar.interpolate_color(self.gradient_bar.gradient, cell.pos().x() / self.width())) for cell in self.cells]
         colors = []
         for i_cell, cell in enumerate(self.cells):
             position = i_cell / len(self.cells)
